@@ -4,8 +4,10 @@
 
 Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
 
+## Device
 ![rpi3](./rpi3.png)
 
+## Architecture
 The Beacon architecture including Beacon management with tega.
 
 ![Beacon](https://docs.google.com/drawings/d/1ddUhcWiNF57k3DRVUa-Zz_Lcl1cscXHIdlRZLvoy8NA/pub?w=960&h=720)
