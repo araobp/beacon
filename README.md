@@ -1,10 +1,10 @@
 #Beacon
 
-## Goal
+## Project goal
 
 Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
 
-## Device
+## Devices
 ![rpi](./rpi.png)
 ![rpi3](./rpi3.png)
 
