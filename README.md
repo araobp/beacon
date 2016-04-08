@@ -35,3 +35,7 @@ Refer to https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based
 $ npm install eddystone-beacon
 ```
 Refer to https://github.com/don/node-eddystone-beacon
+
+## Install the broker (tega)
+
+https://github.com/araobp/tega
