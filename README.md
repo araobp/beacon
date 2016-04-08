@@ -5,6 +5,7 @@
 Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
 
 ## Device
+![rpi](./rpi.png)
 ![rpi3](./rpi3.png)
 
 ## Architecture
