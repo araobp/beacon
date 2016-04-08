@@ -36,6 +36,10 @@ $ npm install eddystone-beacon
 ```
 Refer to https://github.com/don/node-eddystone-beacon
 
+## WiFi access point setup
+
+Refer to https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview
+
 ## Install the broker (tega)
 
 https://github.com/araobp/tega
