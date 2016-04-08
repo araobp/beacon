@@ -1,6 +1,8 @@
 #Beacon
 
-I have just bought Raspberry Pi 3 Model B in Akihabara, Tokyo.
+## Goal
+
+Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
 
 ![rpi3](./rpi3.png)
 
