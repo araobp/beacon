@@ -27,6 +27,8 @@ $ curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 $ sudo apt-get install nodejs
 ```
 
+Refer to https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+
 ### Install eddystone-nodejs
 
 ```
