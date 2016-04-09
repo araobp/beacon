@@ -48,3 +48,17 @@ Refer to https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-p
 ## Install the broker (tega)
 
 https://github.com/araobp/tega
+
+## Misc
+
+### Running Android Studio on my old PC
+
+Memory and Stroge
+```
+RAM: 1024 MB
+```
+
+Emulated Performance / Graphics:
+```
+Software - GLES 2.0
+```
