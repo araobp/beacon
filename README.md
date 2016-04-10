@@ -62,3 +62,5 @@ Emulated Performance / Graphics:
 ```
 Software - GLES 2.0
 ```
+But the simulator does not come up anyway... I am buying a new smartphone supporting Bluetooth 4.1
+
