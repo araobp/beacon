@@ -62,7 +62,7 @@ Emulated Performance / Graphics:
 ```
 Software - GLES 2.0
 ```
-But the simulator does not come up anyway... I am buying a new smartphone supporting Bluetooth 4.1
+But the simulator does not come up anyway... I am buying a new smartphone supporting Bluetooth 4.0
 
 ### iBeacon/Eddystone scanner for Android
 
