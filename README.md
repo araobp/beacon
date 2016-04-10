@@ -64,3 +64,9 @@ Software - GLES 2.0
 ```
 But the simulator does not come up anyway... I am buying a new smartphone supporting Bluetooth 4.1
 
+### iBeacon/Eddystone scanner for Android
+
+- https://play.google.com/store/apps/details?id=kr.co.ixsoft.ibeacon.scanner
+- https://play.google.com/store/apps/details?id=physical_web.org.physicalweb
+- https://play.google.com/store/apps/details?id=de.flurp.beaconscanner.app
+
