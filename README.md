@@ -41,9 +41,14 @@ $ npm install eddystone-beacon
 ```
 Refer to https://github.com/don/node-eddystone-beacon
 
-## Screenshots
+## Android applications
 
-![Beacon Scanner](./Screenshot_2016-04-12.jpg)
+- [Physical Web](https://play.google.com/store/apps/developer?id=The+Physical+Web+Team)
+- [iBeacon and Eddystone Scanner](https://play.google.com/store/apps/details?id=de.flurp.beaconscanner.app)
+
+### Screenshots
+
+![iBeacon and Eddystone Scanner](./Screenshot_2016-04-12.jpg)
 
 ## WiFi access point setup
 
@@ -52,25 +57,3 @@ Refer to https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-p
 ## Install the broker (tega)
 
 https://github.com/araobp/tega
-
-## Misc
-
-### Running Android Studio on my old PC
-
-Memory and Stroge
-```
-RAM: 1024 MB
-```
-
-Emulated Performance / Graphics:
-```
-Software - GLES 2.0
-```
-But the simulator does not come up anyway... I am buying a new smartphone supporting Bluetooth 4.0
-
-### iBeacon/Eddystone scanner for Android
-
-- https://play.google.com/store/apps/details?id=kr.co.ixsoft.ibeacon.scanner
-- https://play.google.com/store/apps/details?id=physical_web.org.physicalweb
-- https://play.google.com/store/apps/details?id=de.flurp.beaconscanner.app
-
