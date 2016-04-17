@@ -53,3 +53,21 @@ Refer to https://github.com/don/node-eddystone-beacon
 ## WiFi access point setup
 
 Refer to https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview
+
+## AWS setup
+
+[Step 1] Download the SDK, certs and config
+
+Save the config as "config.json".
+
+In my case, I saved all the files in "certs" directory.
+
+[Step 2] Unzip the SDK and try out the examples
+
+```
+$ unzip aws-iot-device-sdk-js-latest.zip
+$ cd aws-iot-device-sdk-js-latest
+$ npm install
+$ cd examples
+$ node echo-example.js -F ../../certs/config.json -f ../../certs/ -g ap-northeast-1
+```
