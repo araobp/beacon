@@ -70,4 +70,6 @@ $ cd aws-iot-device-sdk-js-latest
 $ npm install
 $ cd examples
 $ node echo-example.js -F ../../certs/config.json -f ../../certs/ -g ap-northeast-1
+$ netstat -a | grep 8883
+tcp        0      0 192.168.57.132:42235    ec2-54-199-236-168:8883 ESTABLISHED
 ```
