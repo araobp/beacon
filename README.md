@@ -73,3 +73,47 @@ $ node echo-example.js -F ../../certs/config.json -f ../../certs/ -g ap-northeas
 $ netstat -a | grep 8883
 tcp        0      0 192.168.57.132:42235    ec2-54-199-236-168:8883 ESTABLISHED
 ```
+
+[Step 3] device-example.js
+
+Terminal 1
+```
+$ node device-example.js -F ../../certs/config.json -f ../../certs/ -g ap-northeast-1 --test-mode=1
+connect
+message topic_1 {"mode2Process":1}
+message topic_1 {"mode2Process":2}
+message topic_1 {"mode2Process":3}
+   :
+```
+
+Terminal 2
+```
+$ node device-example.js -F ../../certs/config.json -f ../../certs/ -g ap-northeast-1 --test-mode=2
+connect
+message topic_2 {"mode1Process":2}
+message topic_2 {"mode1Process":3}
+message topic_2 {"mode1Process":4}
+   :
+```
+
+[Step 4] thins-example.js
+
+Terminal 1
+```
+$ node thing-example.js
+-F ../../certs/config.json -f ../../certs/ -g ap-northeast-1 --test-mode=1
+connected to AWS IoT
+delta on: RGBLedLamp{"timestamp":1460904574,"state":{"red":42,"green":143,"blue":10},"metadata":{"red":{"timestamp":1460904574},"green":{"timestamp":1460904574},"blue":{"timestamp":1460904574}}}
+delta on: RGBLedLamp{"timestamp":1460904584,"state":{"red":243,"green":216,"blue":65},"metadata":{"red":{"timestamp":1460904584},"green":{"timestamp":1460904584},"blue":{"timestamp":1460904584}}}
+```
+
+Terminal 2
+```
+$ node thing-example.js
+-F ../../certs/config.json -f ../../certs/ -g ap-northeast-1 --test-mode=2
+connected to AWS IoT
+got 'accepted' status on: RGBLedLamp
+updated state to thing shadow
+got 'accepted' status on: RGBLedLamp
+updated state to thing shadow
+```
