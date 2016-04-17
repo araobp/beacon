@@ -74,7 +74,9 @@ $ netstat -a | grep 8883
 tcp        0      0 192.168.57.132:42235    ec2-54-199-236-168:8883 ESTABLISHED
 ```
 
-[Step 3] device-example.js
+## AWS IOT test
+
+### device-example.js
 
 Terminal 1
 ```
@@ -96,7 +98,7 @@ message topic_2 {"mode1Process":4}
    :
 ```
 
-[Step 4] thins-example.js
+### thing-example.js
 
 Terminal 1
 ```
