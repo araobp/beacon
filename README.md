@@ -9,9 +9,9 @@ Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
 ![rpi3](./rpi3.png)
 
 ## Architecture
-The Beacon architecture including Beacon management with tega.
+The Beacon architecture uses AWS for device management and location-specific services:
 
-![Beacon](https://docs.google.com/drawings/d/1ddUhcWiNF57k3DRVUa-Zz_Lcl1cscXHIdlRZLvoy8NA/pub?w=960&h=720)
+![Beacon](https://docs.google.com/drawings/d/1DZxTeMSGM-XhIbeoqJHV08z73gGVNqJ6OSQoyZqkEKk/pub?w=480&h=360)
 
 ## iBeacon setup
 
@@ -53,7 +53,3 @@ Refer to https://github.com/don/node-eddystone-beacon
 ## WiFi access point setup
 
 Refer to https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview
-
-## Install the broker (tega)
-
-https://github.com/araobp/tega
