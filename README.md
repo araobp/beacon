@@ -129,3 +129,21 @@ updated state to thing shadow
 got 'accepted' status on: RGBLedLamp
 updated state to thing shadow
 ```
+
+### echo-test.js
+
+Terminal 1
+```
+node echo-example.js
+-F ../../certs/config.json -f ../../certs/ -g ap-northeast-1 --thing-name beacon-1
+received delta on beacon-1: {"timestamp":1460990590,"state":{"power":"off"},"metadata":{"power":{"timestamp":1460990590}}}
+received delta on beacon-1: {"timestamp":1460990629,"state":{"power":"on"},"metadata":{"power":{"timestamp":1460990629}}}
+```
+
+Terminal 2
+```
+$ aws iot-data update-thing-shadow --thing-name beacon-1 --payload '{"state": {"desired" : {"power" : "o
+ff"}}}' outfile2.json
+$ aws iot-data update-thing-shadow --thing-name beacon-1 --payload '{"state": {"desired" : {"power" : "o
+n"}}}' outfile2.json
+```
