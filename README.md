@@ -130,7 +130,7 @@ got 'accepted' status on: RGBLedLamp
 updated state to thing shadow
 ```
 
-### echo-test.js
+### echo-example.js
 
 Terminal 1
 ```
