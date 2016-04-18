@@ -74,6 +74,16 @@ $ netstat -a | grep 8883
 tcp        0      0 192.168.57.132:42235    ec2-54-199-236-168:8883 ESTABLISHED
 ```
 
+[Step 3] Install aws cli
+```
+$ sudo pip install awscli
+$ aws configure
+AWS Access Key ID [None]: XXXXXXXXXXXXXXXXXXXX
+AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXXXXX
+Default region name [None]: ap-northeast-1
+Default output format [None]: json
+```
+
 ## AWS IOT test
 
 ### device-example.js
