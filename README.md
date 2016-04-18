@@ -147,3 +147,11 @@ ff"}}}' outfile2.json
 $ aws iot-data update-thing-shadow --thing-name beacon-1 --payload '{"state": {"desired" : {"power" : "o
 n"}}}' outfile2.json
 ```
+
+## Working with AWS IOT
+
+Next, I am working on managing Raspberry-Pi-based iBeacon/Eddystone from AWS IOT.
+
+```
+$ aws iot-data update-thing-shadow --thing-name beacon-1 --payload `{"state" : {"desired": {"type": "eddystone", "url": "https://github.com/araobp/beacon"}}}` /tmp/outfile.json
+```
