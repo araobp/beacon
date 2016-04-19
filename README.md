@@ -154,6 +154,11 @@ Next, I worki on managing Raspberry-Pi-based iBeacon/Eddystone from AWS IOT.
 
 Note: Eddystone cannot emit URL larger than 18 bytes.
 
+#### Chrome on Android
+![searching](./Screenshot_2016-04-19-1.png)
+![detected](./Screenshot_2016-04-19-2.png)
+
+#### Operation
 Terminal 1
 ```
 $ cd ~/beacon/agent
