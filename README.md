@@ -34,7 +34,7 @@ $ sudo apt-get install nodejs
 
 Refer to https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
-### Install eddystone-nodejs
+### Install eddystone-beacon
 
 ```
 $ npm install eddystone-beacon
