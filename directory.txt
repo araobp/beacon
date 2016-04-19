@@ -1,0 +1,41 @@
+.
+├── aws-iot-device-sdk-js
+│   ├── CHANGELOG.md
+│   ├── common
+│   ├── device
+│   ├── examples
+│   ├── gulpfile.js
+│   ├── index.js
+│   ├── LICENSE.txt
+│   ├── node_modules
+│   ├── NOTICE.txt
+│   ├── package.json
+│   ├── README.md
+│   ├── test
+│   └── thing
+├── beacon
+│   ├── agent
+│   ├── README.md
+│   ├── rpi3.png
+│   ├── rpi.png
+│   ├── Screenshot_2016-04-12.jpg
+│   └── scripts
+├── certs
+│   ├─xxxxxxxx-certificate.pem.crt
+│   ├─xxxxxxxx-private.pem.key
+│   ├─xxxxxxxx-public.pem.key
+│   ├─xxxxxxxx-certificate.pem.crt
+│   ├─xxxxxxxx-private.pem.key
+│   ├─xxxxxxxx-public.pem.key
+│   ├── config.json
+│   └── root-CA.crt
+├── eddystone-beacon
+│   ├── CHANGES.txt
+│   ├── examples
+│   ├── index.js
+│   ├── lib
+│   ├── LICENSE.txt
+│   ├── node_modules
+│   ├── package.json
+│   ├── README.md
+│   └── test
