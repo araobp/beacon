@@ -150,8 +150,41 @@ n"}}}' outfile2.json
 
 ## Working with AWS IOT
 
-Next, I am working on managing Raspberry-Pi-based iBeacon/Eddystone from AWS IOT.
+Next, I worki on managing Raspberry-Pi-based iBeacon/Eddystone from AWS IOT.
 
+Note: Eddystone cannot emit URL larger than 18 bytes.
+
+Terminal 1
 ```
-$ aws iot-data update-thing-shadow --thing-name beacon-1 --payload `{"state" : {"desired": {"type": "eddystone", "url": "https://github.com/araobp/beacon"}}}` /tmp/outfile.json
+$ cd ~/beacon/agent
+$ ./agent.sh
+received delta on beacon-1: {"timestamp":1461036359,"state":{"url":"https://github.com/"},"metadata":{"url":{"timestamp":1461036359}}}
+https://github.com/
+received delta on beacon-1: {"timestamp":1461036800,"state":{"url":"https://github.com/araobp"},"metadata":{"url":{"timestamp":1461036800}}}
+https://github.com/araobp
+received delta on beacon-1: {"timestamp":1461036834,"state":{"url":"https://github.com/araobp/beacon"},"metadata":{"url":{"timestamp":1461036834}}}
+https://github.com/araobp/beacon
+/home/pi/eddystone-beacon/node_modules/eddystone-url-encoding/lib/encode.js:16
+    throw new Error([
+    ^
+
+Error: Encoded URL (https://github.com/araobp/beacon) is too long (max 18 bytes): 21 bytes
+    at module.exports (/home/pi/eddystone-beacon/node_modules/eddystone-url-encoding/lib/encode.js:16:11)
+    at Object.makeUrlBuffer (/home/pi/eddystone-beacon/lib/util/advertisement-data.js:39:22)
+    at Beacon.advertiseUrl (/home/pi/eddystone-beacon/lib/beacon.js:40:49)
+    at ThingShadowsClient.<anonymous> (/home/pi/beacon/agent/agent.js:48:26)
+    at emitTwo (events.js:100:13)
+    at ThingShadowsClient.emit (events.js:185:7)
+    at ThingShadowsClient._handleMessages (/home/pi/aws-iot-device-sdk-js/thing/index.js:227:15)
+    at DeviceClient.<anonymous> (/home/pi/aws-iot-device-sdk-js/thing/index.js:313:21)
+    at emitThree (events.js:110:13)
+    at DeviceClient.emit (events.js:188:7)
+```
+
+Terminal 2
+```
+$ cd ~/beacon/agent
+$ node master.js https://github.com/
+$ node master.js https://github.com/araobp
+$ node master.js https://github.com/araobp/beacon
 ```
