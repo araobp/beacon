@@ -150,7 +150,9 @@ n"}}}' outfile2.json
 
 ## Working with AWS IOT
 
-Next, I worki on managing Raspberry-Pi-based iBeacon/Eddystone from AWS IOT.
+Chrome on Adroid already supports Eddystone, so that you don't need to install an extra application for Eddystone.
+
+Next, I work on managing Raspberry-Pi-based Eddystone from AWS IOT.
 
 Note: Eddystone cannot emit URL larger than 18 bytes.
 
