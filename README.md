@@ -156,11 +156,11 @@ Next, I work on managing Raspberry-Pi-based Eddystone from AWS IOT.
 
 Note: Eddystone cannot emit URL larger than 18 bytes.
 
-#### Chrome on Android
+### Chrome on Android
 ![searching](./Screenshot_2016-04-19-1.png)
 ![detected](./Screenshot_2016-04-19-2.png)
 
-#### Operation
+### Operation
 Terminal 1
 ```
 $ cd ~/beacon/agent
@@ -195,3 +195,11 @@ $ node master.js https://github.com/
 $ node master.js https://github.com/araobp
 $ node master.js https://github.com/araobp/beacon
 ```
+
+### AWS Shadow, DynamoDB and Lambda
+
+[Step 1] Table addition
+
+![Table](./DynamoDB1.png)
+
+![Table2](./DynamoDB2.png)
