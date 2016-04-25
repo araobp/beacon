@@ -198,8 +198,18 @@ $ node master.js https://github.com/araobp/beacon
 
 ### AWS Shadow, DynamoDB and Lambda
 
-[Step 1] Table addition
+[Step 1] Table addition to DynamoDB
 
 ![Table](./DynamoDB1.png)
 
 ![Table2](./DynamoDB2.png)
+
+[Step 2] Confirm the delta received at the Raspberry Pi 3
+
+![terminal](./terminal.png)
+
+[Step 3] Start Chrome on your smartphone
+
+![URLs](./Screenshot_2016-04-26-01-46-01.png)
+
+![page](./Screenshot_2016-04-26-01-46-08.png)
