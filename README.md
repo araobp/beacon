@@ -247,3 +247,10 @@ $ node master.js https://github.com/araobp/beacon
 ![URLs](./Screenshot_2016-04-26-01-46-01.png)
 
 ![page](./Screenshot_2016-04-26-01-46-08.png)
+
+## Detection the number of people and age of groups
+
+I am studying how to detect the number of people and age of groups around a beacon.
+
+Some useful links:
+- https://davidwalsh.name/face-detection-jquery
