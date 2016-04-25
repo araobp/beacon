@@ -150,7 +150,7 @@ n"}}}' outfile2.json
 
 ## Working with AWS IOT
 
-Chrome on Adroid already supports Eddystone, so that you don't need to install an extra application for Eddystone.
+Chrome for Android already supports Eddystone, so that you don't need to install an extra application for Eddystone.
 
 Next, I work on managing Raspberry-Pi-based Eddystone from AWS IOT.
 
