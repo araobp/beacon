@@ -198,6 +198,40 @@ $ node master.js https://github.com/araobp/beacon
 
 ### AWS Shadow, DynamoDB and Lambda
 
+#### Event flow on AWS
+
+```
+[Raspberry Pi 3] <-- delta -- [Shadow] <-- desired state -- [Lambda] <-- NewImage -- [DynamoDB] <-- input event
+```
+
+#### Code snippet on UpdateShadow lambda function
+
+```
+        if (record.eventName == 'INSERT') {
+            var newImage = record.dynamodb.NewImage;
+            var ageOfGroup = newImage.ageOfGroup.S
+            //console.log(newImage);
+            console.log(ageOfGroup);
+            var url = 'https://github.com/araobp';
+            switch (ageOfGroup) {
+                case 'A':
+                    url = 'http://54.199.216.19/';
+                    break;
+                case 'B':
+                    url = 'https://github.com/';
+                    break;
+                case 'C':
+                    url = 'https://github.com/araobp/';
+                    //console.log(ageOfGroup);
+                    break;
+                default:
+                    console.log('Unidentifed ageOfGroup');
+            }
+            :
+```
+
+#### Test
+
 [Step 1] Table addition to DynamoDB
 
 ![Table](./DynamoDB1.png)
