@@ -216,7 +216,7 @@ sudo apt-get install python-opencv
 
 ### IPython installation
 ```
-$ sudo apt-get install ipython ipython-notebook
+$ sudo apt-get install ipython3 ipython3-notebook
 ```
 =======
 ### AWS Shadow, DynamoDB and Lambda
