@@ -5,8 +5,8 @@
 Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
 
 ## Devices
-![rpi](./rpi.png)
-![rpi3](./rpi3.png)
+![rpi](./doc/rpi.png)
+![rpi3](./doc/rpi3.png)
 
 ## Architecture
 The Beacon architecture uses AWS for device management and location-specific services:
@@ -48,7 +48,7 @@ Refer to https://github.com/don/node-eddystone-beacon
 
 ### Screenshots
 
-![iBeacon and Eddystone Scanner](./Screenshot_2016-04-12.jpg)
+![iBeacon and Eddystone Scanner](./doc/Screenshot_2016-04-12.jpg)
 
 ## WiFi access point setup
 
@@ -157,8 +157,8 @@ Next, I work on managing Raspberry-Pi-based Eddystone from AWS IOT.
 Note: Eddystone cannot emit URL larger than 18 bytes.
 
 #### Chrome on Android
-![searching](./Screenshot_2016-04-19-1.png)
-![detected](./Screenshot_2016-04-19-2.png)
+![searching](./doc/Screenshot_2016-04-19-1.png)
+![detected](./doc/Screenshot_2016-04-19-2.png)
 
 #### Operation
 Terminal 1
@@ -195,3 +195,14 @@ $ node master.js https://github.com/
 $ node master.js https://github.com/araobp
 $ node master.js https://github.com/araobp/beacon
 ```
+
+## Webcam on Raspberry Pi
+
+```
+$ sudo apt-get install fswebcam
+$ fswebcam /tmp/image.jpg
+```
+
+![doll](./doc/doll.jpg)
+
+
