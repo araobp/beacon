@@ -197,16 +197,22 @@ $ node master.js https://github.com/araobp
 $ node master.js https://github.com/araobp/beacon
 ```
 
-<<<<<<< HEAD
 ## Webcam on Raspberry Pi
 
+### fswebcam installation
 ```
 $ sudo apt-get install fswebcam
 $ fswebcam /tmp/image.jpg
 ```
 
+The first shot: an image of German smoker
 ![doll](./doc/doll.jpg)
 
+### OpenCV installation
+```
+$ sudo apt-get install libopencv-dev
+sudo apt-get install python-opencv
+```
 
 =======
 ### AWS Shadow, DynamoDB and Lambda
