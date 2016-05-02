@@ -2,7 +2,7 @@
 
 ## Project goal
 
-Test iBeacon, Eddystone and WiFi SSID as location tags for smart phones.
+Test Eddystone as location tags for smart phones.
 
 ## Devices
 ![rpi](./doc/rpi.png)
@@ -150,17 +150,18 @@ n"}}}' outfile2.json
 
 ## Working with AWS IOT
 
-Chrome on Adroid already supports Eddystone, so that you don't need to install an extra application for Eddystone.
+Chrome for Android already supports Eddystone, so that you don't need to install an extra application for Eddystone.
 
 Next, I work on managing Raspberry-Pi-based Eddystone from AWS IOT.
 
 Note: Eddystone cannot emit URL larger than 18 bytes.
 
-#### Chrome on Android
+### Chrome on Android
 ![searching](./doc/Screenshot_2016-04-19-1.png)
 ![detected](./doc/Screenshot_2016-04-19-2.png)
 
-#### Operation
+
+### Operation
 Terminal 1
 ```
 $ cd ~/beacon/agent
@@ -196,6 +197,7 @@ $ node master.js https://github.com/araobp
 $ node master.js https://github.com/araobp/beacon
 ```
 
+<<<<<<< HEAD
 ## Webcam on Raspberry Pi
 
 ```
@@ -206,3 +208,62 @@ $ fswebcam /tmp/image.jpg
 ![doll](./doc/doll.jpg)
 
 
+=======
+### AWS Shadow, DynamoDB and Lambda
+
+#### Event flow on AWS
+
+```
+[Raspberry Pi 3] <-- delta -- [Shadow] <-- desired state -- [Lambda] <-- NewImage -- [DynamoDB] <-- input event
+```
+
+#### Code snippet on UpdateShadow lambda function
+
+```
+        if (record.eventName == 'INSERT') {
+            var newImage = record.dynamodb.NewImage;
+            var ageOfGroup = newImage.ageOfGroup.S
+            //console.log(newImage);
+            console.log(ageOfGroup);
+            var url = 'https://github.com/araobp';
+            switch (ageOfGroup) {
+                case 'A':
+                    url = 'http://54.199.216.19/';
+                    break;
+                case 'B':
+                    url = 'https://github.com/';
+                    break;
+                case 'C':
+                    url = 'https://github.com/araobp/';
+                    //console.log(ageOfGroup);
+                    break;
+                default:
+                    console.log('Unidentifed ageOfGroup');
+            }
+            :
+```
+
+#### Test
+
+[Step 1] Table addition to DynamoDB
+
+![Table](./DynamoDB1.png)
+
+![Table2](./DynamoDB2.png)
+
+[Step 2] Confirm the delta received at the Raspberry Pi 3
+
+![terminal](./terminal.png)
+
+[Step 3] Start Chrome on your smartphone
+
+![URLs](./Screenshot_2016-04-26-01-46-01.png)
+
+![page](./Screenshot_2016-04-26-01-46-08.png)
+
+## Detection the number of people and age of groups
+
+I am studying how to detect the number of people and age of groups around a beacon.
+
+Some useful links:
+- https://davidwalsh.name/face-detection-jquery
