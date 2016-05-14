@@ -1,5 +1,7 @@
 #Beacon
 
+I SUSPENDED THIS PROJECT AND STARTED ANOTHER PROJECT "[parking](https://github.com/araobp/parking)".
+
 ## Project goal
 
 Test Eddystone as location tags for smart phones.
