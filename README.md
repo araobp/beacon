@@ -1,6 +1,6 @@
 #Beacon
 
-I SUSPENDED THIS PROJECT AND STARTED ANOTHER PROJECT "[parking](https://github.com/araobp/parking)".
+I SUSPENDED THIS PROJECT AND STARTED ANOTHER PROJECT "[parking](https://github.com/araobp/parking)". I realized that using a public IaaS/PaaS/SaaS for my personal projects is not fun at all.
 
 ## Project goal
 
