@@ -1,7 +1,7 @@
 'use strict';
 var aws = require('aws-sdk');
 
-var endpoint = 'https://A2IMT3I3IAR08Y.iot.ap-northeast-1.amazonaws.com';
+var endpoint = 'https://XXXXXXXXXXXXXX.iot.ap-northeast-1.amazonaws.com';
 var thingName = 'beacon-1';
 var iotdata = new aws.IotData( { endpoint: endpoint } );
 var params = { thingName: thingName };
